@@ -69,7 +69,8 @@ async function getConvertedData(from, to, amount){
 
 // display the converted result
 function displayConvertedData(fromCurrency, toCurrency, fromAmt, toAmt){
-    //fromResult.innerHTML = `${fromAmt.toFixed(2)} ${fromCurrency}`;
+    //console.log(fromCurrency, toCurrency, fromAmt, toAmt);
+    fromResult.innerHTML = `${fromAmt.toFixed(2)} ${fromCurrency}`;
     toResult.innerHTML = `${toAmt.toFixed(2)} ${toCurrency}`;
 }
 

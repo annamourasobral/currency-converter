@@ -1,3 +1,5 @@
+![screencapture-currency-converter-annamourasobral-vercel-app-2022-05-07-16_58_51](https://user-images.githubusercontent.com/71239376/167259847-51b1d190-327f-4855-9efd-8ad0e77541f2.png)
+
 # currency-converter 💰
 
 Hello!

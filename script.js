@@ -9,13 +9,18 @@ const swapBtn = document.getElementById('swap-btn');
 
 // fetch country symbol from API
 async function loadCountrySymbols(){
-    const API_URL = 'https://api.exchangerate.host/symbols';
-    const result = await fetch(API_URL);
-    const data = await result.json();
-    // console.log(data.symbols);
-    let symbolList = data.symbols;
-    showData(symbolList);
-}
+    try {
+        const API_URL = 'https://api.exchangerate.host/symbols';
+        const result = await fetch(API_URL);
+        const data = await result.json();
+        // console.log(data.symbols);
+        let symbolList = data.symbols;
+        showData(symbolList);
+    } catch (error) {
+        // error dealing
+        console.error(e);
+    };
+};
 
 document.addEventListener('DOMContentLoaded', () => {
     loadCountrySymbols();
